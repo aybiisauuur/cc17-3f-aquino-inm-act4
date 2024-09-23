@@ -41,19 +41,19 @@
             android:id="@+id/optionPerfect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perfect (100%)"/>
+            android:text="Amazing (20%)"/>
 
         <RadioButton
             android:id="@+id/optionGood"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Good (50%)"/>
+            android:text="Good (18%)"/>
 
         <RadioButton
             android:id="@+id/optionOkay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Okay (25%)"/>
+            android:text="Okay (15%)"/>
 
     </RadioGroup>
 
