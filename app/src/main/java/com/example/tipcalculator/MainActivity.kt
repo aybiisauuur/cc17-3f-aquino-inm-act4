@@ -44,16 +44,17 @@ class MainActivity : AppCompatActivity() {
 
         val selectedId = binding.tipOptions.checkedRadioButtonId
         val tipPercentage = when (selectedId) {
-            R.id.optionPerfect -> 0.10
-            R.id.optionGood -> 0.05
-            else -> 0.025
+            R.id.optionAmazing -> 0.20
+            R.id.optionGood -> 0.18
+            R.id.optionOkay -> 0.15
+            else -> 0.15
         }
         var tip = cost * tipPercentage
         val roundUp = binding.roundTip.isChecked
         if (roundUp) {
             tip = ceil(tip)
         }
-        val formattedTip = NumberFormat.getCurrencyInstance(Locale("en","PH")).format(tip)
+        val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
 
         // Log the calculated tip to check if it's being calculated correctly
         Log.d("TipCalculator", "Calculated Tip: $tip")
